@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 50px;
+            box-shadow: 0px 0px 5px rgb(146, 146, 146);
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            background: #fff;
+        }
+
+        header>p {
+            display: inline;
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+
+        header>p>span {
+            font-size: 20px;
+            font-weight: 800;
+            font-family: Arial;
+            margin-left: 20px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        header>div {
+            width: 300px;
+            height: 50px;
+            float: right;
+            letter-spacing: 4px;
+            margin-right: 20px;
+        }
+
+        header>div>span {
+            display: inline-block;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            width: 80px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        #sec1 {
+            width: 100%;
+        }
+        #sec1>div {
+            width: 80%;
+            margin: auto;
+            position: relative;
+        }
+
+        #sec1>div >img{
+            width: 100%;
+            height: 800px;
+            margin: auto;
+        }
+
+        #sec1>div>p {
+            position: absolute;
+            top: 45%;
+            left: 42%;
+            font-size: 35px;
+            color: #fff;
+            word-spacing: 10px;
+        }
+
+        #sec1>div>p>span {
+            font-weight: 800;
+            position: relative;
+            z-index: 997;
+        }
+
+        #sec1>div>p>span:after {
+            content: "";
+            display: block;
+            clear: both;
+            position: absolute;
+            width: 80px;
+            height: 70px;
+            z-index: -99;
+            background: rgba(0, 0, 0, 0.8);
+            top: -10px;
+            left: -19px;
+        }
+
+        #sec2 {
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+
+        }
+
+        #sec2>p {
+            font-size: 30px;
+        }
+
+        #sec2>hr {
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        #bags {
+            width: 100%;
+            height: 1450px;
+        }
+
+        #bags>div {
+            width:45%;
+            margin-right: 40.444px;
+            margin-bottom: 30px;
+            height: 330px;
+            float: left;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        #bags>div:nth-child(1) {
+            background-image: url(house2.jpg);
+        }
+
+        #bags>div:nth-child(2) {
+            background-image: url(house3.jpg);
+        }
+
+        #bags>div:nth-child(3) {
+            background-image: url(house4.jpg);
+        }
+
+        #bags>div:nth-child(4) {
+            background-image: url(house5.jpg);
+        }
+
+        #bags>div:nth-child(5) {
+            background-image: url(house4.jpg);
+        }
+
+        #bags>div:nth-child(6) {
+            background-image: url(house2.jpg);
+        }
+
+        #bags>div:nth-child(7) {
+            background-image: url(house3.jpg);
+        }
+
+        #bags>div:nth-child(8) {
+            background-image: url(house5.jpg);
+        }
+
+        #bags>div>span {
+            display: inline-block;
+            width: 127px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            background: black;
+            color: white;
+        }
+
+        #sec3 {
+            height: 700px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #sec3>hr,
+        #sec4>hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.1)
+        }
+
+        #sec3>p {
+            font-size: 30px;
+        }
+
+        #sec3>span {
+            font-size: 15px;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+
+        #sec3>#bags2 {
+            width: 100%;
+            height: 500px;
+        }
+
+        #sec3>#bags2>div {
+            width: 22%;
+            height: 400px;
+            float: left;
+            margin-right: 4%;
+        }
+
+        #sec3>#bags2>div:last-child {
+            margin: 0;
+        }
+
+        #sec3>#bags2>div>img {
+            width: 98%;
+            height: 250px;
+            filter: grayscale(0.8);
+        }
+
+        #sec3>#bags2>div>p {
+            color: gray;
+      
+        }
+
+        #sec3>#bags2>div>div {
+            width: 100%;
+            height: 35px;
+            border-radius: 2px;
+            text-align: center;
+            line-height: 35px;
+            margin-top: 10px;
+            background: rgba(209, 209, 209, 0.5)
+        }
+
+        #sec3>#bags2>div>div:hover {
+            background: rgba(148, 148, 148, 0.5);
+        }
+
+        #sec3>#bags2>div>div>a {
+            font-size: 18px;
+        }
+
+        #sec4 {
+            height: 100%;
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        #sec4>p {
+            font-size: 30px;
+            clear: both;
+        }
+
+        #sec4>span {
+            display: block;
+        }
+
+        #sec4>input {
+            width: 90%;
+            margin: auto;
+            height: 40px;
+            box-sizing: border-box;
+            border: 1px solid rgb(182, 182, 182);
+            margin-top: 20px;
+        }
+
+        #sec4>div {
+            margin-top: 20px;
+            width: 150px;
+            height: 35px;
+
+            text-align: center;
+            line-height: 35px;
+        }
+
+        #sec4>div>span:hover {
+            background: rgba(189, 189, 189, 0.5);
+            color: black;
+        }
+
+        #sec4>div>span {
+            width: 150px;
+            height: 35px;
+            display: inline-block;
+            color: #fff;
+            background: black;
+        }
+
+        #sec5 {
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #sec5 > img {
+            width: 100%;
+        }
+
+        footer {
+            width: 100%;
+            height: 80px;
+            margin-top: 20px;
+            background: #000;
+            text-align: center;
+        }
+
+        footer>span {
+            line-height: 80px;
+            color: #fff;
+        }
+
+        footer>span>a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        footer>span>a:hover {
+            color: rgb(68, 136, 0);
+        }
+
+        header>p:hover,
+        header>div>span:hover {
+            background: rgba(194, 194, 194, 0.5);
+            cursor: pointer;
+        }
+        #no {
+            display: none;
+        }
+
+    </style>
+     <link rel="stylesheet" type="text/css" href="media.css">
+     <link rel="stylesheet" type="text/css" href="media2.css">
+</head>
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0" />
+
+<body>
+    <header>
+        <p><span>BR</span>Architects</p>
+        <div>
+            <span>Projects</span>
+            <span>About</span>
+            <span>Contact</span>
+        </div>
+    </header>
+    <section id="sec1">
+        <div>
+            <img src="architect.jpg" alt="">
+            <p id="yes"><span>BR</span> Architects</p>
+        </div>
+    </section>
+    <section id="sec2">
+        <p>Projects</p>
+        <hr>
+        <div id="bags">
+            <div><span>Summer House</span></div>
+            <div><span>Brick House</span></div>
+            <div><span>Renovated</span></div>
+            <div><span>Barn House</span></div>
+            <div><span>Summer House</span></div>
+            <div><span>Brick House</span></div>
+            <div><span>Renovated</span></div>
+            <div><span>Barn House</span></div>
+        </div>
+    </section>
+    <section id="sec3">
+        <p>About</p>
+        <hr>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u
+            t aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident
+            , sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscin
+            g elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim a
+            d minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm
+            odo consequat.
+        </span>
+        <div id="bags2">
+            <div>
+                <img src="team1.jpg" alt="">
+                <h1>John Doe</h1>
+                <p>CEO & Founder</p>
+                <span>Phasellus eget enim eu lectus faucibusvestibulum. Suspendisse sodales pellentesque elementum.
+                </span>
+                <div><a href="#">contact</a></div>
+            </div>
+            <div>
+                <img src="team2.jpg" alt="">
+                <h1>Jane Doe</h1>
+                <p>Architect</p>
+                <span>Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum.
+                </span>
+                <div><a href="#">contact</a></div>
+            </div>
+            <div>
+                <img src="team3.jpg" alt="">
+                <h1>Mike Ross</h1>
+                <p>Architect</p>
+                <span>Phasellus eget enim eu lectus faucibus vesti
+                    bulum. Suspendisse sodales pellentesque elementum.
+                </span>
+                <div><a href="#">contact</a></div>
+            </div>
+            <div>
+                <img src="team4.jpg" alt="">
+                <h1>Dan Star</h1>
+                <p>Architect</p>
+                <span>Phasellus eget enim eu lectus faucibus vesti
+                    bulum. Suspendisse sodales pellentesque elementum.
+                </span>
+                <div><a href="#">contact</a></div>
+            </div>
+        </div>
+
+    </section>
+    <section id="sec4">
+        <p>Contact</p>
+        <hr>
+        <span>Lets get in touch and talk about your next project.</span>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Subject">
+        <input type="text" placeholder="Comment">
+        <div><span>SEND MESSAGE</span></div>
+
+    </section>
+    <section id="sec5">
+        <img src="map.jpg" alt="">
+    </section>
+    <footer>
+        <span>Powered by <a href="#">w3.css</a></span>
+    </footer>
+</body>
+
+</html>

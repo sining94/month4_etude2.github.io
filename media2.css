@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@media (max-width:600px) {
+
+    header > div >span {
+        display: none;
+    }
+    #sec2 {
+        height: 2950px;
+    
+    }
+    #bags {
+        height: 2790px;
+        margin-bottom: 50px;
+    }
+    #bags > div,#bags>div:nth-child(4),
+    #bags>div:nth-child(8){
+        width: 100%;
+    }
+    #sec2>p,#sec3>p,#sec4>p {
+        clear: both;
+    }
+    #sec3 >#bags2 {
+        height: 1900px;
+    }
+    #sec3 >#bags2 > div {
+        width: 100%;
+        margin: 0;
+      
+    }
+    #sec3 {
+        width: 90%;
+        margin: auto;
+        height: 2200px;
+        
+    }
+    #sec4 {
+        width: 90%;
+        margin: auto;
+        height: 550px;
+      
+    }
+    #sec3>#bags2>div:last-child {
+        width: 100%;
+        margin: 0%;
+    }
+  
+}
